@@ -1,9 +1,9 @@
 "use client";
 import BurgerBtn from "../BurgerBtn/BurgerBtn";
 import NavbarTitle from "../NavbarTitle/NavbarTitle";
+import NavbarNav from "../NavbarNav/NavbarNav";
 
 import { useSelector } from "react-redux";
-import { toggleDarkMode } from "@/lib/features/darkmode/darkmodeSlice";
 
 export default function Navbar() {
   const darkmode = useSelector((state) => state.darkmode.value);
@@ -17,6 +17,7 @@ export default function Navbar() {
       <nav className={`h-full w-full flex justify-between items-center`}>
         <NavbarTitle />
         <BurgerBtn />
+        <NavbarNav />
       </nav>
     </header>
   );
