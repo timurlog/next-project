@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "utendo-bold";
+  src: url("../../public/font/utendo-bold.ttf");
+}
+
+@font-face {
+  font-family: "utendo-black";
+  src: url("../../public/font/utendo-black.ttf");
+}
+
+@font-face {
+  font-family: "utendo-light";
+  src: url("../../public/font/utendo-light.ttf");
+}
+
+@font-face {
+  font-family: "utendo-medium";
+  src: url("../../public/font/utendo-medium.ttf");
+}
+
+@font-face {
+  font-family: "utendo-regular";
+  src: url("../../public/font/utendo-regular.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
