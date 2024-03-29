@@ -28,7 +28,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/timurlog/next-project">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="./public/image/icon/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Next Project: GameStash</h3>
