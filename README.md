@@ -31,7 +31,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Next Project</h3>
+<h3 align="center">Next Project: GameStash</h3>
 
   <p align="center">
     Final frontend project of the molengeek formation
@@ -92,7 +92,7 @@ Not yet up to date
 
 ## Roadmap
 
-- [ ] **Navbar**
+- [x] **Navbar**
 - [ ] **Home page**
   - [ ] Carousel header with 5 random products
   - [ ] Featured sections and affordable/highly rated products

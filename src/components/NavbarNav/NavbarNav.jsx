@@ -7,13 +7,16 @@ import Link from "next/link";
 export default function NavbarNav() {
   const darkmode = useSelector((state) => state.darkmode.value);
   const showmenu = useSelector((state) => state.showmenu.value);
+  const auth = useSelector((state) => state.auth.value);
 
   const dispatch = useDispatch();
 
   return (
     <div
       className={`z-50 absolute lg:static left-0 w-full lg:w-fit py-5 lg:py-0 ${
-        darkmode ? "bg-[#262626]" : "bg-[#FF5400]"
+        darkmode
+          ? "bg-[#262626] lg:bg-transparent"
+          : "bg-[#FF5400] lg:bg-transparent"
       } ${
         showmenu ? "top-20 opacity-100" : "top-[-100%] opacity-0"
       } transition-all lg:opacity-100`}
@@ -62,7 +65,7 @@ export default function NavbarNav() {
             darkmode
               ? "hover:bg-[#414141] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
               : "hover:bg-[#FF6D00] lg:hover:text-[#414141] lg:hover:bg-transparent"
-          }`}
+          } ${auth ? "hidden" : "block"}`}
         >
           Sign In
         </Link>
@@ -77,7 +80,7 @@ export default function NavbarNav() {
             darkmode
               ? "hover:bg-[#414141] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
               : "hover:bg-[#FF6D00] lg:hover:text-[#414141] lg:hover:bg-transparent"
-          }`}
+          } ${auth ? "block" : "hidden"}`}
         >
           Sign Out
         </div>
