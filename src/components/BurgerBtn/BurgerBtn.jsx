@@ -6,6 +6,7 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function BurgerBtn() {
   const darkmode = useSelector((state) => state.darkmode.value);
+  const showmenu = useSelector((state) => state.showmenu.value);
 
   const dispatch = useDispatch();
 
@@ -18,7 +19,7 @@ export default function BurgerBtn() {
       }}
       className="swap swap-rotate"
     >
-      <input type="checkbox" />
+      <input type="checkbox" readOnly checked={showmenu} />
 
       <div className="swap-off fill-current w-10 h-10 flex justify-center items-center">
         <FontAwesomeIcon
