@@ -12,21 +12,25 @@ export default function NavbarNav() {
 
   return (
     <div
-      className={`z-50 absolute left-0 w-full py-5 ${
+      className={`z-50 absolute lg:static left-0 w-full lg:w-fit py-5 lg:py-0 ${
         darkmode ? "bg-[#262626]" : "bg-[#FF5400]"
       } ${
         showmenu ? "top-20 opacity-100" : "top-[-100%] opacity-0"
-      } transition-all`}
+      } transition-all lg:opacity-100`}
     >
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 lg:flex-row lg:w-fit">
         <Link
           onClick={() => {
             dispatch(toggleShowMenu());
           }}
           href={"/game-list"}
-          className={`cursor-pointer text-2xl px-5 py-2 font-[utendo-medium] transition-colors ${
+          className={`cursor-pointer text-2xl lg:mt-2 px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
-          } ${darkmode ? "hover:bg-[#414141]" : "hover:bg-[#FF6D00]"}`}
+          } ${
+            darkmode
+              ? "hover:bg-[#414141] lg:hover:text-[#414141] lg:hover:bg-transparent"
+              : "hover:bg-[#FF6D00] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+          }`}
         >
           Game List
         </Link>
@@ -36,9 +40,13 @@ export default function NavbarNav() {
             dispatch(toggleShowMenu());
           }}
           href={"/favorite-game"}
-          className={`cursor-pointer text-2xl px-5 py-2 font-[utendo-medium] transition-colors ${
+          className={`cursor-pointer text-2xl lg:mt-2 px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
-          } ${darkmode ? "hover:bg-[#414141]" : "hover:bg-[#FF6D00]"}`}
+          } ${
+            darkmode
+              ? "hover:bg-[#414141] lg:hover:text-[#414141] lg:hover:bg-transparent"
+              : "hover:bg-[#FF6D00] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+          }`}
         >
           Favorite Game
         </Link>
@@ -48,9 +56,13 @@ export default function NavbarNav() {
             dispatch(toggleShowMenu());
           }}
           href={"/sign-in"}
-          className={`cursor-pointer text-2xl px-5 py-2 font-[utendo-medium] transition-colors ${
+          className={`cursor-pointer text-2xl lg:mt-2 px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
-          } ${darkmode ? "hover:bg-[#414141]" : "hover:bg-[#FF6D00]"}`}
+          } ${
+            darkmode
+              ? "hover:bg-[#414141] lg:hover:text-[#414141] lg:hover:bg-transparent"
+              : "hover:bg-[#FF6D00] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+          }`}
         >
           Sign In
         </Link>
@@ -59,9 +71,13 @@ export default function NavbarNav() {
           onClick={() => {
             dispatch(toggleShowMenu());
           }}
-          className={`cursor-pointer text-2xl px-5 py-2 font-[utendo-medium] transition-colors ${
+          className={`cursor-pointer text-2xl lg:mt-2 px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
-          } ${darkmode ? "hover:bg-[#414141]" : "hover:bg-[#FF6D00]"}`}
+          } ${
+            darkmode
+              ? "hover:bg-[#414141] lg:hover:text-[#414141] lg:hover:bg-transparent"
+              : "hover:bg-[#FF6D00] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+          }`}
         >
           Sign Out
         </div>

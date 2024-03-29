@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`h-20 w-full px-5 ${
+      className={`h-20 w-full px-5 lg:px-10 ${
         darkmode ? "bg-[#262626]" : "bg-[#FF5400]"
       }`}
     >

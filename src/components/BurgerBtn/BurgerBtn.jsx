@@ -11,7 +11,7 @@ export default function BurgerBtn() {
   const dispatch = useDispatch();
 
   return (
-    <label className="swap swap-rotate">
+    <label className="swap swap-rotate lg:hidden">
       <input
         onClick={() => {
           dispatch(toggleShowMenu());
