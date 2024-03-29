@@ -8,7 +8,9 @@ export default function Register() {
 
   return (
     <div
-      className={`min-h-screen w-full ${darkmode ? "bg-[#414141]" : "bg-white"}`}
+      className={`min-h-screen w-full ${
+        darkmode ? "bg-[#414141]" : "bg-white"
+      }`}
     >
       <Navbar />
     </div>
