@@ -28,8 +28,8 @@ export default function NavbarNav() {
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
           } ${
             darkmode
-              ? "hover:bg-[#414141] lg:hover:text-[#414141] lg:hover:bg-transparent"
-              : "hover:bg-[#FF6D00] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+              ? "hover:bg-[#414141] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+              : "hover:bg-[#FF6D00] lg:hover:text-[#414141] lg:hover:bg-transparent"
           }`}
         >
           Game List
@@ -44,8 +44,8 @@ export default function NavbarNav() {
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
           } ${
             darkmode
-              ? "hover:bg-[#414141] lg:hover:text-[#414141] lg:hover:bg-transparent"
-              : "hover:bg-[#FF6D00] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+              ? "hover:bg-[#414141] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+              : "hover:bg-[#FF6D00] lg:hover:text-[#414141] lg:hover:bg-transparent"
           }`}
         >
           Favorite Game
@@ -60,8 +60,8 @@ export default function NavbarNav() {
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
           } ${
             darkmode
-              ? "hover:bg-[#414141] lg:hover:text-[#414141] lg:hover:bg-transparent"
-              : "hover:bg-[#FF6D00] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+              ? "hover:bg-[#414141] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+              : "hover:bg-[#FF6D00] lg:hover:text-[#414141] lg:hover:bg-transparent"
           }`}
         >
           Sign In
@@ -75,8 +75,8 @@ export default function NavbarNav() {
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
           } ${
             darkmode
-              ? "hover:bg-[#414141] lg:hover:text-[#414141] lg:hover:bg-transparent"
-              : "hover:bg-[#FF6D00] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+              ? "hover:bg-[#414141] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
+              : "hover:bg-[#FF6D00] lg:hover:text-[#414141] lg:hover:bg-transparent"
           }`}
         >
           Sign Out
