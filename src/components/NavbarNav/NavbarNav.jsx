@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleDarkMode } from "@/lib/features/darkmode/darkmodeSlice";
+import { toggleShowMenu } from "@/lib/features/showmenu/showmenuSlice";
 import Link from "next/link";
 
 export default function NavbarNav() {
@@ -19,6 +20,9 @@ export default function NavbarNav() {
     >
       <div className="flex flex-col gap-3">
         <Link
+          onClick={() => {
+            dispatch(toggleShowMenu());
+          }}
           href={"/game-list"}
           className={`cursor-pointer text-2xl px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
@@ -28,7 +32,10 @@ export default function NavbarNav() {
         </Link>
 
         <Link
-          href={"/game-list"}
+          onClick={() => {
+            dispatch(toggleShowMenu());
+          }}
+          href={"/favorite-game"}
           className={`cursor-pointer text-2xl px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
           } ${darkmode ? "hover:bg-[#414141]" : "hover:bg-[#FF6D00]"}`}
@@ -37,6 +44,9 @@ export default function NavbarNav() {
         </Link>
 
         <Link
+          onClick={() => {
+            dispatch(toggleShowMenu());
+          }}
           href={"/sign-in"}
           className={`cursor-pointer text-2xl px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
@@ -46,6 +56,9 @@ export default function NavbarNav() {
         </Link>
 
         <div
+          onClick={() => {
+            dispatch(toggleShowMenu());
+          }}
           className={`cursor-pointer text-2xl px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
           } ${darkmode ? "hover:bg-[#414141]" : "hover:bg-[#FF6D00]"}`}

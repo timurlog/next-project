@@ -11,15 +11,15 @@ export default function BurgerBtn() {
   const dispatch = useDispatch();
 
   return (
-    <label
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        dispatch(toggleShowMenu());
-      }}
-      className="swap swap-rotate"
-    >
-      <input type="checkbox" readOnly checked={showmenu} />
+    <label className="swap swap-rotate">
+      <input
+        onClick={() => {
+          dispatch(toggleShowMenu());
+        }}
+        type="checkbox"
+        readOnly
+        checked={showmenu}
+      />
 
       <div className="swap-off fill-current w-10 h-10 flex justify-center items-center">
         <FontAwesomeIcon
