@@ -1,4 +1,3 @@
-"use client";
 import BurgerBtn from "../BurgerBtn/BurgerBtn";
 import NavbarTitle from "../NavbarTitle/NavbarTitle";
 import NavbarNav from "../NavbarNav/NavbarNav";
