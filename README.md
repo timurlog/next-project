@@ -94,7 +94,7 @@ Not yet up to date
 
 - [x] **Navbar**
 - [ ] **Home page**
-  - [ ] Carousel header with 5 random products
+  - [x] Carousel header with 5 random products
   - [ ] Featured sections and affordable/highly rated products
 - [ ] **Authentication**
   - [ ] **Login page:** Theme aligned with the general design of the site
