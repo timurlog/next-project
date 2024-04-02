@@ -12,7 +12,7 @@ export default function NavbarTitle() {
         darkmode ? "text-[#FF5400]" : "text-[#262626]"
       }`}
     >
-      GameStash
+      BookStash
     </Link>
   );
 }

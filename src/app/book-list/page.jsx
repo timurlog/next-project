@@ -3,7 +3,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Navbar from "@/components/Navbar/Navbar";
 
-export default function FavoriteGame() {
+export default function BookList() {
   const darkmode = useSelector((state) => state.darkmode.value);
 
   return (

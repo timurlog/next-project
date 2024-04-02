@@ -26,7 +26,7 @@ export default function NavbarNav() {
           onClick={() => {
             dispatch(toggleShowMenu());
           }}
-          href={"/game-list"}
+          href={"/book-list"}
           className={`cursor-pointer text-2xl lg:mt-2 px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
           } ${
@@ -35,14 +35,14 @@ export default function NavbarNav() {
               : "hover:bg-[#FF6D00] lg:hover:text-[#414141] lg:hover:bg-transparent"
           }`}
         >
-          Game List
+          Book List
         </Link>
 
         <Link
           onClick={() => {
             dispatch(toggleShowMenu());
           }}
-          href={"/favorite-game"}
+          href={"/favorite-book"}
           className={`cursor-pointer text-2xl lg:mt-2 px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
           } ${
@@ -51,7 +51,7 @@ export default function NavbarNav() {
               : "hover:bg-[#FF6D00] lg:hover:text-[#414141] lg:hover:bg-transparent"
           }`}
         >
-          Favorite Game
+          Favorite Book
         </Link>
 
         <Link
