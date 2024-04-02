@@ -76,7 +76,7 @@ Not yet up to date
 - HTML5
 - CSS3
 - JavaScript (ES6+)
-- API: www.freetogame.com/api/games
+- API: https://example-data.draftbit.com/books
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
