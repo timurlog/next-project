@@ -42,7 +42,7 @@ export default function BookRating() {
                 {item.title}
               </div>
               <div className={`font-[utendo-medium] text-4xl`}>
-                {item.rating}
+                Note: {item.rating}
               </div>
             </div>
             <img className="w-full" src={item.image_url} alt="" />
