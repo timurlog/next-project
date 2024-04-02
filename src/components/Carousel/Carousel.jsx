@@ -10,7 +10,7 @@ export default function Carousel() {
   const error = useSelector((state) => state.content.error);
 
   if (isLoading) {
-    return <div className="text-white text-[100px]">isLoading</div>;
+    return <div className="text-orange-600 text-[100px]">isLoading</div>;
   }
   if (error) {
     return error;
