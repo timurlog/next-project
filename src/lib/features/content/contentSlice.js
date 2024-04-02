@@ -10,7 +10,7 @@ const initialState = {
 export const fetchContent = createAsyncThunk(
   "content/fetchContent",
   async () => {
-    const res = await axios("https://gta.vercel.app/api/vehicles/all");
+    const res = await axios("https://example-data.draftbit.com/books");
     const data = await res.data;
     return data;
   }

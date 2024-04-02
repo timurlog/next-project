@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchContent } from "@/lib/features/content/contentSlice";
 import Navbar from "@/components/Navbar/Navbar";
@@ -24,7 +24,7 @@ export default function Home() {
         className={`h-screen w-full ${darkmode ? "bg-[#414141]" : "bg-white"}`}
       >
         <Navbar />
-        <div className="h-full w-full flex justify-center items-center">
+        <div className="h-[80vh] w-full flex justify-center items-center">
           <span className="loading loading-spinner loading-lg"></span>
         </div>
       </div>
