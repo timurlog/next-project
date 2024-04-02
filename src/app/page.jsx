@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchContent } from "@/lib/features/content/contentSlice";
 import Navbar from "@/components/Navbar/Navbar";
 import Carousel from "@/components/Carousel/Carousel";
+import H1 from "@/components/H1/H1";
+import BookRating from "@/components/BookRating/BookRating";
 
 export default function Home() {
   const darkmode = useSelector((state) => state.darkmode.value);
@@ -43,6 +45,8 @@ export default function Home() {
     >
       <Navbar />
       <Carousel />
+      <H1 txt={"Your book directory"} />
+      <BookRating />
     </div>
   );
 }
