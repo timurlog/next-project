@@ -88,11 +88,11 @@ Not yet up to date
 
 - Home Page
 
-[![Homepage Name Screen Shot][homepage-screenshot]]
+[![Homepage Name Screen Shot][homepage-screenshot]](https://timurlog.github.io/next-project/)
 
 - Home Page Darkmode
 
-[![Homepage Name Screen Shot][homepageD-screenshot]]
+[![Homepage Name Screen Shot][homepageD-screenshot]](https://timurlog.github.io/next-project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
