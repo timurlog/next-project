@@ -93,30 +93,30 @@ Not yet up to date
 ## Roadmap
 
 - [x] **Navbar**
-- [ ] **Home page**
+- [x] **Home page**
   - [x] Carousel header with 5 random products
-  - [ ] Featured sections and affordable/highly rated products
+  - [x] Featured sections and affordable/highly rated products
 - [ ] **Authentication**
   - [ ] **Login page:** Theme aligned with the general design of the site
   - [ ] **Registration Page:** Simple registration with real authentication
 - [ ] **Product Management**
-  - [ ] **Products Page:** List of products with advanced filters
+  - [x] **Products Page:** List of products with advanced filters
   - [ ] **Product Details:** Detailed display by product ID without price but with option to add to cart/favorites
 - [ ] **Cart and Favorites**
   - [ ] Full cart and favorites management functionality, accessible only to logged in users
   - [ ] Buttons to empty the cart and delete favorites
-- [ ] **Interface and Interaction**
-  - [ ] Asynchronous loading of API data with loading logo
-  - [ ] Animations for loading components (optional)
-  - [ ] Implementing a dark mode
+- [x] **Interface and Interaction**
+  - [x] Asynchronous loading of API data with loading logo
+  - [x] Animations for loading components (optional)
+  - [x] Implementing a dark mode
 - [ ] **Filtering and Advanced Search**
   - [ ] Various and varied filters depending on your products
-  - [ ] Advanced search depending on your products (by title, author, genre, etc.)
+  - [x] Advanced search depending on your products (by title, author, genre, etc.)
 - [ ] **Bonus Features**
   - [ ] Order Tracking: Simulate tracking for user orders
   - [ ] User Reviews: Display fictitious reviews to enrich the user experience
-- [ ] **Responsive Design**
-  - [ ] Ensuring a smooth and responsive user experience from Desktop L to mobile L
+- [x] **Responsive Design**
+  - [x] Ensuring a smooth and responsive user experience from Desktop L to mobile L
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
