@@ -41,6 +41,7 @@ export default function BookInfo() {
       }`}
     >
       <div>t la cet annee a drr</div>
+      <Footer />
     </div>
   );
 }

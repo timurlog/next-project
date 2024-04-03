@@ -86,7 +86,11 @@ Not yet up to date
 
 ## Usage
 
-Not yet up to date
+Home Page
+[![Homepage Name Screen Shot][homepage-screenshot]]
+
+Home Page Darkmode
+[![Homepage Name Screen Shot][homepageD-screenshot]]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,6 +164,8 @@ Project Link: [https://github.com/timurlog/next-project](https://github.com/timu
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/timur-logie/
 [product-screenshot]: ./public/image/screeshot/booklist.png
+[homepage-screenshot]: ./public/image/screeshot/homepage.png
+[homepageD-screenshot]: ./public/image/screeshot/homepagedarkmode.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
