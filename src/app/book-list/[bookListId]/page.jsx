@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchContent } from "@/lib/features/content/contentSlice";
 import Footer from "@/components/Footer/Footer";
@@ -18,7 +18,25 @@ export default function BookInfo({ params }) {
   const error = useSelector((state) => state.content.error);
 
   const param = params.bookListId;
-  const data = contents[param - 1] ? [contents[param - 1]] : null; // Ensure data is either an object or null
+  const data =
+    contents && contents.length > 0 && contents[param - 1]
+      ? [contents[param - 1]]
+      : null; // Ensure data is either an object or null
+  const [dataAuthors, setDataAuthors] = useState([]);
+
+  useEffect(() => {
+    if (!data || !contents) return;
+
+    const newFilteredData = contents.filter((item) =>
+      item.authors.toLowerCase().includes(data[0].authors.toLowerCase())
+    );
+
+    // Only update state if the filtered data has changed
+    // This requires a way to compare the newFilteredData with dataAuthors, which might be non-trivial if the objects have deep nested structures
+    if (JSON.stringify(newFilteredData) !== JSON.stringify(dataAuthors)) {
+      setDataAuthors(newFilteredData);
+    }
+  }, [data, contents]); // Assuming `data` and `contents` don't change on every render
 
   if (isLoading) {
     return (
@@ -65,6 +83,7 @@ export default function BookInfo({ params }) {
           rating_count={item.rating_count}
           num_pages={item.num_pages}
           genres={item.genres}
+          dataAuthors={dataAuthors}
         />
       ))}
       <Footer />

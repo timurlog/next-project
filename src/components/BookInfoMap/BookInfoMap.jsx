@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { useSelector } from "react-redux";
 import H2 from "../H2/H2";
 import BackBtn from "../BackBtn/BackBtn";
@@ -74,6 +75,27 @@ export default function BookInfoMap(props) {
             <span className="font-[utendo-bold]">Genres:</span> {props.genres}
           </p>
         </div>
+      </div>
+      <div>
+        <p
+          className={`px-5 py-3 md:px-10 font-[utendo-regular] text-md xl:text-lg ${
+            darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
+          }`}
+        >
+          <span className="font-[utendo-bold]">From the same author :</span>
+        </p>
+        {props.dataAuthors.map((item, i) => (
+          <div>
+            <Link
+              className={`px-5 py-3 md:px-10 font-[utendo-regular] text-md xl:text-lg ${
+                darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
+              } hover:text-[#FF5400]`}
+              href={`/book-list/${item.id}`}
+            >
+              {item.title}
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );
