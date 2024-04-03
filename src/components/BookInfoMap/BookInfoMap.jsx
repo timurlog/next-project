@@ -56,14 +56,24 @@ export default function BookInfoMap(props) {
             </p>
           </div>
         </div>
-        <p
-          className={`px-5 py-3 md:pr-10 font-[utendo-regular] text-md xl:text-lg ${
-            darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
-          }`}
-        >
-          <span className="font-[utendo-bold]">Description:</span>{" "}
-          {props.description}
-        </p>
+        <div>
+          <p
+            className={`px-5 py-3 md:pr-10 font-[utendo-regular] text-md xl:text-lg ${
+              darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
+            }`}
+          >
+            <span className="font-[utendo-bold]">Description:</span>{" "}
+            {props.description}
+          </p>
+
+          <p
+            className={`px-5 py-3 md:pr-10 font-[utendo-regular] text-md xl:text-lg ${
+              darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
+            }`}
+          >
+            <span className="font-[utendo-bold]">Genres:</span> {props.genres}
+          </p>
+        </div>
       </div>
     </div>
   );

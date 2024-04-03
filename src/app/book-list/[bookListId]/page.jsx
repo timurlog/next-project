@@ -64,6 +64,7 @@ export default function BookInfo({ params }) {
           rating={item.rating}
           rating_count={item.rating_count}
           num_pages={item.num_pages}
+          genres={item.genres}
         />
       ))}
       <Footer />
