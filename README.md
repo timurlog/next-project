@@ -121,7 +121,7 @@ Not yet up to date
   - [ ] Various and varied filters depending on your products
   - [x] Advanced search depending on your products (by title, author, genre, etc.)
 - [ ] **Bonus Features**
-  - [o] Order Tracking: Simulate tracking for user orders
+  - [ ] Order Tracking: Simulate tracking for user orders
   - [ ] User Reviews: Display fictitious reviews to enrich the user experience
 - [x] **Responsive Design**
   - [x] Ensuring a smooth and responsive user experience from Desktop L to mobile L
