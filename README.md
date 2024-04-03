@@ -86,10 +86,12 @@ Not yet up to date
 
 ## Usage
 
-Home Page
+- Home Page
+
 [![Homepage Name Screen Shot][homepage-screenshot]]
 
-Home Page Darkmode
+- Home Page Darkmode
+
 [![Homepage Name Screen Shot][homepageD-screenshot]]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
