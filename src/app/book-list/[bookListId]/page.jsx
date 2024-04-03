@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchContent } from "@/lib/features/content/contentSlice";
 import Footer from "@/components/Footer/Footer";
+import BookInfoMap from "@/components/BookInfoMap/BookInfoMap";
 
 export default function BookInfo({ params }) {
   const darkmode = useSelector((state) => state.darkmode.value);
@@ -53,9 +54,8 @@ export default function BookInfo({ params }) {
         darkmode ? "bg-[#414141]" : "bg-white"
       }`}
     >
-      <div>t la cet annee a drr</div>
-      {data.map((item, index) => (
-        <div key={index}>{item?.title || "Title not available"}</div>
+      {data.map((item, i) => (
+        <BookInfoMap key={i} title={item.title} />
       ))}
       <Footer />
     </div>

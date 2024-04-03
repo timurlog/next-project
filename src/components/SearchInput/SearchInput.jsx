@@ -14,14 +14,16 @@ export default function SearchInput(props) {
         <input
           onChange={(e) => props.searchVal(e.target.value)}
           type="text"
-          className="grow"
+          className={`grow ${darkmode ? "text-[#E4E4E4]" : "text-[#262626]"}`}
           placeholder="Search"
         />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 16"
           fill="currentColor"
-          className="w-6 h-6 opacity-70"
+          className={`w-6 h-6 opacity-70 ${
+            darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
+          }`}
         >
           <path
             fillRule="evenodd"

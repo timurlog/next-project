@@ -50,13 +50,19 @@ export default function BookCard(props) {
         </p>
         <div className="card-actions justify-end">
           <Link href={`/book-list/${props.id}`}>
-            <button className="btn btn-primary bg-[#FF5400] border-none shadow-none hover:bg-[#FF7F40]">
+            <button
+              className={`btn btn-primary bg-[#FF5400] border-none shadow-none hover:bg-[#FF7F40] font-[utendo-medium] text-lg tracking-widest ${
+                darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
+              }`}
+            >
               More
             </button>
           </Link>
           <button
             onClick={() => setFav(!fav)}
-            className="btn btn-primary bg-[#FF5400] border-none shadow-none hover:bg-[#FF7F40] text-lg"
+            className={`btn btn-primary bg-[#FF5400] border-none shadow-none hover:bg-[#FF7F40] text-lg ${
+              darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
+            }`}
           >
             {fav ? (
               <FontAwesomeIcon icon={faSolidHeart} className="text-red-600" />
