@@ -107,9 +107,9 @@ Not yet up to date
 - [ ] **Authentication**
   - [ ] **Login page:** Theme aligned with the general design of the site
   - [ ] **Registration Page:** Simple registration with real authentication
-- [ ] **Product Management**
+- [x] **Product Management**
   - [x] **Products Page:** List of products with advanced filters
-  - [ ] **Product Details:** Detailed display by product ID without price but with option to add to cart/favorites
+  - [x] **Product Details:** Detailed display by product ID without price but with option to add to cart/favorites
 - [ ] **Cart and Favorites**
   - [ ] Full cart and favorites management functionality, accessible only to logged in users
   - [ ] Buttons to empty the cart and delete favorites
@@ -121,7 +121,7 @@ Not yet up to date
   - [ ] Various and varied filters depending on your products
   - [x] Advanced search depending on your products (by title, author, genre, etc.)
 - [ ] **Bonus Features**
-  - [ ] Order Tracking: Simulate tracking for user orders
+  - [o] Order Tracking: Simulate tracking for user orders
   - [ ] User Reviews: Display fictitious reviews to enrich the user experience
 - [x] **Responsive Design**
   - [x] Ensuring a smooth and responsive user experience from Desktop L to mobile L
