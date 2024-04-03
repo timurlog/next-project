@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchContent } from "@/lib/features/content/contentSlice";
 import Footer from "@/components/Footer/Footer";
 
-export default function BookInfo() {
+export default function BookInfo({ params }) {
   const darkmode = useSelector((state) => state.darkmode.value);
 
   const dispatch = useDispatch();
@@ -17,6 +17,11 @@ export default function BookInfo() {
   const contents = useSelector((state) => state.content.contents);
   const isLoading = useSelector((state) => state.content.isLoading);
   const error = useSelector((state) => state.content.error);
+
+  const param = params.bookListId;
+  const [data, setData] = useState([contents[param - 1]]);
+
+  console.log(data);
 
   if (isLoading) {
     return (
@@ -41,6 +46,9 @@ export default function BookInfo() {
       }`}
     >
       <div>t la cet annee a drr</div>
+      {data.map((item, i) => (
+        <div key={i}>{item.title}</div>
+      ))}
       <Footer />
     </div>
   );
