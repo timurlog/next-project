@@ -55,7 +55,16 @@ export default function BookInfo({ params }) {
       }`}
     >
       {data.map((item, i) => (
-        <BookInfoMap key={i} title={item.title} />
+        <BookInfoMap
+          key={i}
+          title={item.title}
+          authors={item.authors}
+          img={item.image_url}
+          description={item.description}
+          rating={item.rating}
+          rating_count={item.rating_count}
+          num_pages={item.num_pages}
+        />
       ))}
       <Footer />
     </div>
