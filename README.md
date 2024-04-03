@@ -64,7 +64,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://timurlog.github.io/next-project/)
 
 Not yet up to date
 
@@ -157,7 +157,7 @@ Project Link: [https://github.com/timurlog/next-project](https://github.com/timu
 [license-url]: https://github.com/timurlog/next-project/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/timur-logie/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: ./public/image/screeshot/booklist.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
