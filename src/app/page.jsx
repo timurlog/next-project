@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchContent } from "@/lib/features/content/contentSlice";
@@ -46,7 +47,9 @@ export default function Home() {
     >
       <Navbar />
       <Carousel />
-      <H1 txt={"Your book directory"} />
+      <Link href={"/book-list"}>
+        <H1 txt={"Your book directory"} />
+      </Link>
       <BookRating />
       <Footer />
     </div>
