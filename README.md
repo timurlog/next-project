@@ -76,6 +76,8 @@ Not yet up to date
 - HTML5
 - CSS3
 - JavaScript (ES6+)
+- Tailwind CSS v3.0
+- daisyUI 4.9.0
 - API: https://example-data.draftbit.com/books
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
