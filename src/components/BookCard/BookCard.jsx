@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faEmptyHeart } from "@fortawesome/free-regular-svg-icons";
@@ -48,9 +49,11 @@ export default function BookCard(props) {
           Rating: {props.rating}
         </p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary bg-[#FF5400] border-none shadow-none hover:bg-[#FF7F40]">
-            More
-          </button>
+          <Link href={`/book-list/${props.id}`}>
+            <button className="btn btn-primary bg-[#FF5400] border-none shadow-none hover:bg-[#FF7F40]">
+              More
+            </button>
+          </Link>
           <button
             onClick={() => setFav(!fav)}
             className="btn btn-primary bg-[#FF5400] border-none shadow-none hover:bg-[#FF7F40] text-lg"

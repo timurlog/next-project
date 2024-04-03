@@ -19,6 +19,7 @@ export default function BookMap(props) {
             authors={item.authors}
             rating={item.rating}
             genres={item.genres}
+            id={item.id}
           />
         ))}
       </div>
