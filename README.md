@@ -31,7 +31,7 @@
     <img src="./public/image/icon/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Next Project: GameStash</h3>
+<h3 align="center">Next Project: BookStash</h3>
 
   <p align="center">
     Final frontend project of the molengeek formation
