@@ -1,10 +1,28 @@
 "use client";
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { registername } from "@/lib/features/auth/authSlice";
+import { registermdp } from "@/lib/features/auth/authSlice";
 import RegisterCard from "@/components/RegisterCard/RegisterCard";
 
 export default function Register() {
+  const router = useRouter();
+  const connexion = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+  const [name, setName] = useState("");
+  const [mdp, setMdp] = useState("");
+
   const darkmode = useSelector((state) => state.darkmode.value);
+
+  function register() {
+    dispatch(registername(name));
+    dispatch(registermdp(mdp));
+    setTimeout(() => {
+      router.push("/sign-in");
+    }, 1);
+  }
 
   return (
     <div
@@ -12,7 +30,7 @@ export default function Register() {
         darkmode ? "bg-[#414141]" : "bg-white"
       }`}
     >
-      <RegisterCard />
+      <RegisterCard register={register} name={setName} mdp={setMdp} />
     </div>
   );
 }
