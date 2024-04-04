@@ -4,7 +4,7 @@ import H1 from "../H1/H1";
 import Link from "next/link";
 import BackBtn from "../BackBtn/BackBtn";
 
-export default function SignInCard() {
+export default function SignInCard(props) {
   const darkmode = useSelector((state) => state.darkmode.value);
 
   return (
@@ -31,7 +31,12 @@ export default function SignInCard() {
           >
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
           </svg>
-          <input type="text" className="grow" placeholder="Username" />
+          <input
+            onChange={(e) => props.name(e.target.value)}
+            type="text"
+            className="grow"
+            placeholder="Username"
+          />
         </label>
         <label
           className={`input input-bordered flex items-center gap-2 ${
@@ -54,9 +59,15 @@ export default function SignInCard() {
               clipRule="evenodd"
             />
           </svg>
-          <input type="password" className="grow" placeholder="Password" />
+          <input
+            onChange={(e) => props.mdp(e.target.value)}
+            type="password"
+            className="grow"
+            placeholder="Password"
+          />
         </label>
         <button
+          onClick={() => props.conect()}
           className={`btn w-full border-none shadow-none font-[utendo-medium] text-lg tracking-widest ${
             darkmode
               ? "bg-[#262626] hover:bg-[#5C5C5C] text-[#E4E4E4]"

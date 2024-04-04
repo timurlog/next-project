@@ -2,14 +2,26 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleDarkMode } from "@/lib/features/darkmode/darkmodeSlice";
 import { toggleShowMenu } from "@/lib/features/showmenu/showmenuSlice";
+import { logintru } from "@/lib/features/auth/authSlice";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function NavbarNav() {
+  const router = useRouter();
   const darkmode = useSelector((state) => state.darkmode.value);
   const showmenu = useSelector((state) => state.showmenu.value);
-  const auth = useSelector((state) => state.auth.value);
+  const connexion = useSelector((state) => state.auth);
 
   const dispatch = useDispatch();
+
+  function disconect() {
+    if (connexion.status) {
+      setTimeout(() => {
+        router.push("/");
+      }, 1300);
+      dispatch(logintru(!connexion.status));
+    }
+  }
 
   return (
     <div
@@ -65,14 +77,14 @@ export default function NavbarNav() {
             darkmode
               ? "hover:bg-[#414141] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
               : "hover:bg-[#FF6D00] lg:hover:text-[#414141] lg:hover:bg-transparent"
-          } ${auth ? "hidden" : "block"}`}
+          } ${connexion.status ? "hidden" : "block"}`}
         >
           Sign In
         </Link>
 
         <div
           onClick={() => {
-            dispatch(toggleShowMenu());
+            disconect();
           }}
           className={`cursor-pointer text-2xl lg:mt-2 px-5 py-2 font-[utendo-medium] transition-colors ${
             darkmode ? "text-[#FF5400]" : "text-[#262626]"
@@ -80,7 +92,7 @@ export default function NavbarNav() {
             darkmode
               ? "hover:bg-[#414141] lg:hover:text-[#FF6D00] lg:hover:bg-transparent"
               : "hover:bg-[#FF6D00] lg:hover:text-[#414141] lg:hover:bg-transparent"
-          } ${auth ? "block" : "hidden"}`}
+          } ${connexion.status ? "block" : "hidden"}`}
         >
           Sign Out
         </div>

@@ -1,24 +1,30 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const account = [
-  {
-    name: "admin",
-    password: "modepass",
-  },
-];
-
-const authSlice = createSlice({
+export const authSlice = createSlice({
   name: "auth",
-  initialState: { value: false },
+  initialState: {
+    name: ["admin", "timtimide"],
+    password: ["modepass", "MODEPASS"],
+    status: false,
+  },
+
   reducers: {
-    connect: (state) => {
-      state.value = true;
+    verify: (state, action) => {
+      state.mail = action.payload;
     },
-    disconnect: (state) => {
-      state.value = false;
+    registername: (state, action) => {
+      state.name.push(action.payload);
+    },
+    registermdp: (state, action) => {
+      state.password.push(action.payload);
+    },
+    logintru: (state, action) => {
+      state.status = action.payload;
     },
   },
 });
 
-export const { connect, disconnect } = authSlice.actions;
+export const { verify, registername, registermdp, logintru } =
+  authSlice.actions;
+
 export default authSlice.reducer;
