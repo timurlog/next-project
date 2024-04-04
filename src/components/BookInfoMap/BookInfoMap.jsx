@@ -84,18 +84,22 @@ export default function BookInfoMap(props) {
         >
           <span className="font-[utendo-bold]">From the same author :</span>
         </p>
-        {props.dataAuthors.map((item, i) => (
-          <div key={i}>
-            <Link
-              className={`px-5 py-3 md:px-10 font-[utendo-regular] text-md xl:text-lg ${
-                darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
-              } hover:text-[#FF5400]`}
-              href={`/book-list/${item.id}`}
-            >
-              {item.title}
-            </Link>
-          </div>
-        ))}
+        <div className="flex flex-col gap-3">
+          {props.dataAuthors.map((item, i) => (
+            <div key={i}>
+              <Link
+                className={`mx-5 py-3 pr-3 md:mx-10 font-[utendo-regular] text-md xl:text-lg hover:pl-3 rounded-md transition-all ${
+                  darkmode
+                    ? "text-[#E4E4E4] hover:bg-[#5C5C5C]"
+                    : "text-[#262626] hover:bg-[#E4E4E4]"
+                } hover:text-[#FF5400]`}
+                href={`/book-list/${item.id}`}
+              >
+                {item.title}
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
