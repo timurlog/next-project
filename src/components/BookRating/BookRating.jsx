@@ -1,17 +1,15 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import Link from "next/link";
 import H2 from "../H2/H2";
 
 export default function BookRating() {
-  const darkmode = useSelector((state) => state.darkmode.value);
+  const [topBooks, setTopBooks] = useState([]);
 
+  const darkmode = useSelector((state) => state.darkmode.value);
   const contents = useSelector((state) => state.content.contents);
   const isLoading = useSelector((state) => state.content.isLoading);
   const error = useSelector((state) => state.content.error);
-
-  const [topBooks, setTopBooks] = useState([]);
 
   useEffect(() => {
     // Trier les livres par note, en ordre décroissant
@@ -19,7 +17,7 @@ export default function BookRating() {
       .sort((a, b) => b.rating - a.rating)
       .slice(0, 5);
     setTopBooks(sortedBooks);
-  }, []);
+  }, [contents]); // Add contents to the dependency array
 
   if (isLoading) {
     return <div className="text-orange-600 text-[100px]">isLoading</div>;
