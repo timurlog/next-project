@@ -5,7 +5,7 @@ export default function SearchInput(props) {
   const darkmode = useSelector((state) => state.darkmode.value);
 
   return (
-    <div className={`px-5 md:px-10 py-5`}>
+    <div className={`px-5 lg:px-10 py-5`}>
       <label
         className={`input input-bordered flex items-center gap-2 border-none sm:w-1/2 lg:w-1/4 xl:w-1/5 ${
           darkmode ? "bg-[#262626]" : "bg-[#E4E4E4]"

@@ -30,7 +30,7 @@ export default function BookRating() {
     <div className="py-10 bg-[#262626]">
       <H2 txt={"Top Book"} />
       <div
-        className={`pt-10 px-5 md:px-10 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-items-center gap-10`}
+        className={`pt-10 px-5 lg:px-10 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-items-center gap-10`}
       >
         {topBooks.map((item, i) => (
           <Link key={i} href={`/book-list/${item.id}`}>

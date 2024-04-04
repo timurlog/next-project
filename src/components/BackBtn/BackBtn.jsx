@@ -6,7 +6,7 @@ export default function BackBtn(props) {
   const darkmode = useSelector((state) => state.darkmode.value);
 
   return (
-    <div className={`px-5 md:px-10 pb-5`}>
+    <div className={`px-5 lg:px-10 pb-5`}>
       <Link href={props.href}>
         <button
           className={`btn border-none shadow-none font-[utendo-medium] text-lg tracking-widest ${

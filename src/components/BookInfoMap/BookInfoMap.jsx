@@ -18,7 +18,7 @@ export default function BookInfoMap(props) {
       <BackBtn href={"/book-list/"} />
       <H2 txt={props.title} />
       <p
-        className={`px-5 py-3 md:px-10 font-[utendo-medium] text-xl ${
+        className={`px-5 py-3 lg:px-10 font-[utendo-medium] text-xl ${
           darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
         }`}
       >
@@ -33,14 +33,14 @@ export default function BookInfoMap(props) {
           />
           <div className="py-3 sm:py-0 flex flex-col md:pt-3 xl:pt-0">
             <p
-              className={`px-5 md:px-10 font-[utendo-regular] text-md xl:text-lg ${
+              className={`px-5 lg:px-10 font-[utendo-regular] text-md xl:text-lg ${
                 darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
               }`}
             >
               <span className="font-[utendo-bold]">Rating:</span> {props.rating}
             </p>
             <p
-              className={`px-5 md:px-10 font-[utendo-regular] text-md xl:text-lg ${
+              className={`px-5 lg:px-10 font-[utendo-regular] text-md xl:text-lg ${
                 darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
               }`}
             >
@@ -48,7 +48,7 @@ export default function BookInfoMap(props) {
               {numberWithSpaces(props.rating_count)}
             </p>
             <p
-              className={`px-5 md:px-10 font-[utendo-regular] text-md xl:text-lg ${
+              className={`px-5 lg:px-10 font-[utendo-regular] text-md xl:text-lg ${
                 darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
               }`}
             >
@@ -78,7 +78,7 @@ export default function BookInfoMap(props) {
       </div>
       <div>
         <p
-          className={`px-5 py-3 md:px-10 font-[utendo-regular] text-md xl:text-lg ${
+          className={`px-5 py-3 lg:px-10 font-[utendo-regular] text-md xl:text-lg ${
             darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
           }`}
         >
