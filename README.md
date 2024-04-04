@@ -105,7 +105,7 @@ Not yet up to date
   - [x] Carousel header with 5 random products
   - [x] Featured sections and affordable/highly rated products
 - [ ] **Authentication**
-  - [ ] **Login page:** Theme aligned with the general design of the site
+  - [x] **Login page:** Theme aligned with the general design of the site
   - [ ] **Registration Page:** Simple registration with real authentication
 - [x] **Product Management**
   - [x] **Products Page:** List of products with advanced filters
