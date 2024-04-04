@@ -7,6 +7,7 @@ import { faHeart as faSolidHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default function BookCard(props) {
   const darkmode = useSelector((state) => state.darkmode.value);
+  const connexion = useSelector((state) => state.auth);
 
   const [fav, setFav] = useState(false);
 
@@ -59,6 +60,7 @@ export default function BookCard(props) {
             </button>
           </Link>
           <button
+            disabled={!connexion.status}
             onClick={() => setFav(!fav)}
             className={`btn btn-primary bg-[#FF5400] border-none shadow-none hover:bg-[#FF7F40] text-lg ${
               darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
