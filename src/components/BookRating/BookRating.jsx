@@ -11,13 +11,6 @@ export default function BookRating() {
   const isLoading = useSelector((state) => state.content.isLoading);
   const error = useSelector((state) => state.content.error);
 
-  if (isLoading) {
-    return <div className="text-orange-600 text-[100px]">isLoading</div>;
-  }
-  if (error) {
-    return error;
-  }
-
   const [topBooks, setTopBooks] = useState([]);
 
   useEffect(() => {
@@ -27,6 +20,13 @@ export default function BookRating() {
       .slice(0, 5);
     setTopBooks(sortedBooks);
   }, []);
+
+  if (isLoading) {
+    return <div className="text-orange-600 text-[100px]">isLoading</div>;
+  }
+  if (error) {
+    return error;
+  }
 
   return (
     <div className="py-10 bg-[#262626]">
