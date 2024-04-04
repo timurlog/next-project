@@ -117,8 +117,8 @@ Not yet up to date
   - [x] Asynchronous loading of API data with loading logo
   - [x] Animations for loading components (optional)
   - [x] Implementing a dark mode
-- [ ] **Filtering and Advanced Search**
-  - [ ] Various and varied filters depending on your products
+- [x] **Filtering and Advanced Search**
+  - [x] Various and varied filters depending on your products
   - [x] Advanced search depending on your products (by title, author, genre, etc.)
 - [ ] **Bonus Features**
   - [ ] Order Tracking: Simulate tracking for user orders
