@@ -39,7 +39,7 @@
     <a href="https://github.com/timurlog/next-project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/timurlog/next-project">View Demo</a>
+    <a href="https://bookstash.vercel.app">View Demo</a>
   </p>
 </div>
 
@@ -64,7 +64,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://timurlog.github.io/next-project/)
+[![Product Name Screen Shot][product-screenshot]](https://bookstash.vercel.app)
 
 Not yet up to date
 
@@ -88,11 +88,11 @@ Not yet up to date
 
 - Home Page
 
-[![Homepage Name Screen Shot][homepage-screenshot]](https://timurlog.github.io/next-project/)
+[![Homepage Name Screen Shot][homepage-screenshot]](https://bookstash.vercel.app)
 
 - Home Page Darkmode
 
-[![Homepage Name Screen Shot][homepageD-screenshot]](https://timurlog.github.io/next-project/)
+[![Homepage Name Screen Shot][homepageD-screenshot]](https://bookstash.vercel.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
