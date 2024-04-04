@@ -18,7 +18,7 @@ export default function NavbarNav() {
     if (connexion.status) {
       setTimeout(() => {
         router.push("/");
-      }, 1300);
+      }, 1);
       dispatch(logintru(!connexion.status));
     }
   }

@@ -27,7 +27,7 @@ export default function BookInfoMap(props) {
       <div className="md:grid md:grid-cols-2">
         <div className="py-3 sm:flex md:block xl:flex">
           <img
-            className="px-5 md:pl-10 md:pr-0 w-full sm:w-3/5 md:h-[60vh] md:w-auto"
+            className="px-5 lg:pl-10 md:pr-0 w-full sm:w-3/5 md:h-[60vh] md:w-auto"
             src={props.img}
             alt={props.title}
           />
@@ -59,7 +59,7 @@ export default function BookInfoMap(props) {
         </div>
         <div>
           <p
-            className={`px-5 py-3 md:pr-10 font-[utendo-regular] text-md xl:text-lg ${
+            className={`px-5 py-3 lg:pr-10 font-[utendo-regular] text-md xl:text-lg ${
               darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
             }`}
           >
@@ -68,7 +68,7 @@ export default function BookInfoMap(props) {
           </p>
 
           <p
-            className={`px-5 py-3 md:pr-10 font-[utendo-regular] text-md xl:text-lg ${
+            className={`px-5 py-3 lg:pr-10 font-[utendo-regular] text-md xl:text-lg ${
               darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
             }`}
           >

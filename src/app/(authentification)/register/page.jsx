@@ -17,11 +17,15 @@ export default function Register() {
   const darkmode = useSelector((state) => state.darkmode.value);
 
   function register() {
-    dispatch(registername(name));
-    dispatch(registermdp(mdp));
-    setTimeout(() => {
-      router.push("/sign-in");
-    }, 1);
+    for (let i = 0; i < connexion.name.length; i++) {
+      if (connexion.name[i] != name && mdp.length > 0 && name.length > 0) {
+        dispatch(registername(name));
+        dispatch(registermdp(mdp));
+        setTimeout(() => {
+          router.push("/sign-in");
+        }, 1);
+      }
+    }
   }
 
   return (
