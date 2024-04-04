@@ -85,7 +85,7 @@ export default function BookInfoMap(props) {
           <span className="font-[utendo-bold]">From the same author :</span>
         </p>
         {props.dataAuthors.map((item, i) => (
-          <div>
+          <div key={i}>
             <Link
               className={`px-5 py-3 md:px-10 font-[utendo-regular] text-md xl:text-lg ${
                 darkmode ? "text-[#E4E4E4]" : "text-[#262626]"

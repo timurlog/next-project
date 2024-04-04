@@ -28,8 +28,6 @@ export default function BookRating() {
     setTopBooks(sortedBooks);
   }, []);
 
-  console.log(topBooks);
-
   return (
     <div className="py-10 bg-[#262626]">
       <H2 txt={"Top Book"} />
@@ -37,9 +35,8 @@ export default function BookRating() {
         className={`pt-10 px-5 md:px-10 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 justify-items-center gap-10`}
       >
         {topBooks.map((item, i) => (
-          <Link href={`/book-list/${item.id}`}>
+          <Link key={i} href={`/book-list/${item.id}`}>
             <div
-              key={i}
               className={`w-full h-fit text-[#E4E4E4] hover:bg-[#5C5C5C] p-5 transition-colors rounded-lg`}
             >
               <div className="w-full h-40 flex flex-col justify-between gap-3 pb-5">

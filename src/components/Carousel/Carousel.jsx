@@ -35,8 +35,8 @@ export default function Carousel() {
   }
 
   return (
-    <div class="logos">
-      <div class="logos-slide">
+    <div className="logos">
+      <div className="logos-slide">
         <div className="h-96 w-72 flex justify-center items-center">
           <img src={dataRandom[0]} alt="" />
         </div>
@@ -68,7 +68,7 @@ export default function Carousel() {
           <img src={dataRandom[9]} alt="" />
         </div>
       </div>
-      <div class="logos-slide">
+      <div className="logos-slide">
         <div className="h-96 w-72 flex justify-center items-center">
           <img src={dataRandom[0]} alt="" />
         </div>
