@@ -4,7 +4,7 @@ import H1 from "../H1/H1";
 import Link from "next/link";
 import BackBtn from "../BackBtn/BackBtn";
 
-export default function SignInCard() {
+export default function RegisterCard() {
   const darkmode = useSelector((state) => state.darkmode.value);
 
   return (
@@ -12,7 +12,7 @@ export default function SignInCard() {
       <div className="md:px-[120px]">
         <BackBtn href={"/"} />
       </div>
-      <H1 txt={"Sign In"} />
+      <H1 txt={"Register"} />
       <div className="px-5 md:px-40 flex flex-col gap-3">
         <label
           className={`input input-bordered flex items-center gap-2 ${
@@ -31,7 +31,7 @@ export default function SignInCard() {
           >
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
           </svg>
-          <input type="text" className="grow" placeholder="Username" />
+          <input type="text" className="grow" placeholder="Choose a Username" />
         </label>
         <label
           className={`input input-bordered flex items-center gap-2 ${
@@ -54,7 +54,11 @@ export default function SignInCard() {
               clipRule="evenodd"
             />
           </svg>
-          <input type="password" className="grow" placeholder="Password" />
+          <input
+            type="password"
+            className="grow"
+            placeholder="Create a Password"
+          />
         </label>
         <button
           className={`btn w-full border-none shadow-none font-[utendo-medium] text-lg tracking-widest ${
@@ -63,15 +67,15 @@ export default function SignInCard() {
               : "bg-[#E4E4E4] hover:bg-[#ABABAB] text-[#262626]"
           }`}
         >
-          Connection
+          Create an account
         </button>
         <p
           className={`text-center ${
             darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
           }`}
         >
-          To create an account,{" "}
-          <Link className="underline hover:text-blue-600" href={"/register"}>
+          To log in,{" "}
+          <Link className="underline hover:text-blue-600" href={"/sign-in"}>
             click here
           </Link>
         </p>

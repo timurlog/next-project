@@ -1,5 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const account = [
+  {
+    name: "admin",
+    password: "modepass",
+  },
+];
+
 const authSlice = createSlice({
   name: "auth",
   initialState: { value: false },
