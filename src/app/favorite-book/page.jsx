@@ -53,7 +53,9 @@ export default function FavoriteBook() {
       }`}
     >
       <Navbar />
-      <BookFavMap data={favData} />
+      <div className="min-h-[90vh]">
+        <BookFavMap data={favData} />
+      </div>
       <Footer />
     </div>
   );

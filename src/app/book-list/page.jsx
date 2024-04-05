@@ -61,7 +61,9 @@ export default function BookList() {
       }`}
     >
       <Navbar />
-      <BookMap data={data} searchVal={setSearchVal} />
+      <div className="min-h-[90vh]">
+        <BookMap data={data} searchVal={setSearchVal} />
+      </div>
       <Footer />
     </div>
   );
