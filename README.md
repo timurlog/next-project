@@ -66,7 +66,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://bookstash.vercel.app)
 
-Not yet up to date
+End of front end project in Molengeek. Project in Next.js 14 with a book API. Possibility of adding books to your favorites while logged in. Home page with a carousel and trends
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
