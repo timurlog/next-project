@@ -94,6 +94,10 @@ End of front end project in Molengeek. Project in Next.js 14 with a book API. Po
 
 [![Homepage Name Screen Shot][homepageD-screenshot]](https://bookstash.vercel.app)
 
+- Favorite Book
+
+[![Favorite Name Screen Shot][fav-screenshot]](https://bookstash.vercel.app/favorite-book)
+
 - Sign In Mobile
 
 [![Sign In Name Screen Shot][sign-in-screenshot]](https://bookstash.vercel.app/sign-in)
@@ -101,10 +105,6 @@ End of front end project in Molengeek. Project in Next.js 14 with a book API. Po
 - Register Mobile
 
 [![Register Name Screen Shot][register-screenshot]](https://bookstash.vercel.app/register)
-
-- Favorite Book
-
-[![Favorite Name Screen Shot][fav-screenshot]](https://bookstash.vercel.app/favorite-book)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,9 +122,9 @@ End of front end project in Molengeek. Project in Next.js 14 with a book API. Po
 - [x] **Product Management**
   - [x] **Products Page:** List of products with advanced filters
   - [x] **Product Details:** Detailed display by product ID without price but with option to add to cart/favorites
-- [ ] **Cart and Favorites**
-  - [ ] Full cart and favorites management functionality, accessible only to logged in users
-  - [ ] Buttons to empty the cart and delete favorites
+- [x] **Cart and Favorites**
+  - [x] Full cart and favorites management functionality, accessible only to logged in users
+  - [x] Buttons to empty the cart and delete favorites
 - [x] **Interface and Interaction**
   - [x] Asynchronous loading of API data with loading logo
   - [x] Animations for loading components (optional)
