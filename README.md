@@ -94,6 +94,14 @@ Not yet up to date
 
 [![Homepage Name Screen Shot][homepageD-screenshot]](https://bookstash.vercel.app)
 
+- Sign In
+
+[![Sign In Name Screen Shot][sign-in-screenshot]](https://bookstash.vercel.app/sign-in)
+
+- Register
+
+[![Register Name Screen Shot][register-screenshot]](https://bookstash.vercel.app/register)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
@@ -168,6 +176,8 @@ Project Link: [https://github.com/timurlog/next-project](https://github.com/timu
 [product-screenshot]: ./public/image/screeshot/booklist.png
 [homepage-screenshot]: ./public/image/screeshot/homepage.png
 [homepageD-screenshot]: ./public/image/screeshot/homepagedarkmode.png
+[sign-in-screenshot]: ./public/image/screeshot/sign-in-mobile.png
+[register-screenshot]: ./public/image/screeshot/register-mobile.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
