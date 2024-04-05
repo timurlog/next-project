@@ -7,6 +7,9 @@ const favoriteSlice = createSlice({
     addId: (state, action) => {
       state.value.push(action.payload);
     },
+    delAll: (state) => {
+      state.value = [];
+    },
     popId: (state, action) => {
       const index = state.value.indexOf(action.payload);
       if (index !== -1) {
@@ -16,5 +19,5 @@ const favoriteSlice = createSlice({
   },
 });
 
-export const { addId, popId } = favoriteSlice.actions;
+export const { addId, popId, delAll } = favoriteSlice.actions;
 export default favoriteSlice.reducer;

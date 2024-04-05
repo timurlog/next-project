@@ -102,6 +102,10 @@ End of front end project in Molengeek. Project in Next.js 14 with a book API. Po
 
 [![Register Name Screen Shot][register-screenshot]](https://bookstash.vercel.app/register)
 
+- Favorite Book
+
+[![Favorite Name Screen Shot][fav-screenshot]](https://bookstash.vercel.app/favorite-book)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
@@ -178,6 +182,7 @@ Project Link: [https://github.com/timurlog/next-project](https://github.com/timu
 [homepageD-screenshot]: ./public/image/screeshot/homepagedarkmode.png
 [sign-in-screenshot]: ./public/image/screeshot/sign-in-mobile.png
 [register-screenshot]: ./public/image/screeshot/register-mobile.png
+[fav-screenshot]: ./public/image/screeshot/fav.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
