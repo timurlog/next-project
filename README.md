@@ -94,11 +94,11 @@ Not yet up to date
 
 [![Homepage Name Screen Shot][homepageD-screenshot]](https://bookstash.vercel.app)
 
-- Sign In
+- Sign In Mobile
 
 [![Sign In Name Screen Shot][sign-in-screenshot]](https://bookstash.vercel.app/sign-in)
 
-- Register
+- Register Mobile
 
 [![Register Name Screen Shot][register-screenshot]](https://bookstash.vercel.app/register)
 
