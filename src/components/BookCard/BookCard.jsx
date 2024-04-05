@@ -1,15 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faEmptyHeart } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as faSolidHeart } from "@fortawesome/free-solid-svg-icons";
+import { addId } from "@/lib/features/favorite/favoriteSlice";
+import { popId } from "@/lib/features/favorite/favoriteSlice";
+import { useRouter } from "next/navigation";
 
 export default function BookCard(props) {
+  const router = useRouter();
   const darkmode = useSelector((state) => state.darkmode.value);
   const connexion = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+
+  const favoriteArray = useSelector((state) => state.favorite.value);
 
   const [fav, setFav] = useState(false);
+
+  useEffect(() => {
+    const isFavorite = favoriteArray.includes(props.id);
+    setFav(isFavorite);
+  }, [favoriteArray, props.id]);
 
   return (
     <div
@@ -60,8 +72,13 @@ export default function BookCard(props) {
             </button>
           </Link>
           <button
-            disabled={!connexion.status}
-            onClick={() => setFav(!fav)}
+            onClick={() => {
+              connexion.status
+                ? fav
+                  ? dispatch(popId(props.id))
+                  : dispatch(addId(props.id))
+                : router.push("/sign-in");
+            }}
             className={`btn btn-primary bg-[#FF5400] border-none shadow-none hover:bg-[#FF7F40] text-lg ${
               darkmode ? "text-[#E4E4E4]" : "text-[#262626]"
             }`}
