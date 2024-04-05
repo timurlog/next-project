@@ -6,7 +6,6 @@ import H2 from "../H2/H2";
 export default function BookRating() {
   const [topBooks, setTopBooks] = useState([]);
 
-  const darkmode = useSelector((state) => state.darkmode.value);
   const contents = useSelector((state) => state.content.contents);
   const isLoading = useSelector((state) => state.content.isLoading);
   const error = useSelector((state) => state.content.error);
@@ -17,7 +16,7 @@ export default function BookRating() {
       .sort((a, b) => b.rating - a.rating)
       .slice(0, 5);
     setTopBooks(sortedBooks);
-  }, [contents]); // Add contents to the dependency array
+  }, [contents]);
 
   if (isLoading) {
     return <div className="text-orange-600 text-[100px]">isLoading</div>;

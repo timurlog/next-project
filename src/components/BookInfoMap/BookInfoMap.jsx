@@ -7,6 +7,7 @@ import BackBtn from "../BackBtn/BackBtn";
 export default function BookInfoMap(props) {
   const darkmode = useSelector((state) => state.darkmode.value);
 
+  // Function to put number with spaces
   function numberWithSpaces(x) {
     const parts = x.toString().split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");

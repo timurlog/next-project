@@ -15,6 +15,7 @@ export default function SignIn() {
 
   const darkmode = useSelector((state) => state.darkmode.value);
 
+  // Function pour se connecter
   function conect() {
     for (let i = 0; i < connexion.name.length; i++) {
       if (connexion.name[i] == name && connexion.password[i] == mdp) {

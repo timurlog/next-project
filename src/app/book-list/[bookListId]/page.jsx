@@ -17,6 +17,7 @@ export default function BookInfo({ params }) {
   const isLoading = useSelector((state) => state.content.isLoading);
   const error = useSelector((state) => state.content.error);
 
+  // Ensemble de code qui permet de recuperer le livre dans le data (API) par son id
   const param = params.bookListId;
   const data =
     contents && contents.length > 0 && contents[param - 1]
@@ -32,11 +33,10 @@ export default function BookInfo({ params }) {
     );
 
     // Only update state if the filtered data has changed
-    // This requires a way to compare the newFilteredData with dataAuthors, which might be non-trivial if the objects have deep nested structures
     if (JSON.stringify(newFilteredData) !== JSON.stringify(dataAuthors)) {
       setDataAuthors(newFilteredData);
     }
-  }, [data, contents]); // Assuming `data` and `contents` don't change on every render
+  }, [data, contents]);
 
   if (isLoading) {
     return (

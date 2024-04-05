@@ -14,6 +14,7 @@ export default function NavbarNav() {
 
   const dispatch = useDispatch();
 
+  // Function pour se deconecter quand on est log
   function disconect() {
     if (connexion.status) {
       setTimeout(() => {

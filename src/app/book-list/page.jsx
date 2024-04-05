@@ -23,6 +23,7 @@ export default function BookList() {
   const [searchVal, setSearchVal] = useState("");
   const [data, setData] = useState([]);
 
+  // useEffect qui permet de faire un tableau en fonction de la recherche
   useEffect(() => {
     if (!contents) return;
 
